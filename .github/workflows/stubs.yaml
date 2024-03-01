@@ -28,7 +28,7 @@ jobs:
           python -m pip install --progress-bar off --upgrade pip setuptools
           python -m pip install --progress-bar off -e .[stubs]
       - name: Display system information
-        run: template-sys_info --developer
+        run: eeg_wiki-sys_info --developer
       - name: Generate stub files
         run: python tools/stubgen.py
       - name: Push stub files
@@ -37,7 +37,7 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           if [ -n "$(git status --porcelain)" ]; then
-            git add template/\*.pyi
+            git add eeg_wiki/\*.pyi
             git commit -m "deploy stub files [ci skip]"
             git push
           fi
