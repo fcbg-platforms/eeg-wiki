@@ -3,17 +3,21 @@
 # For the full list of built-in configuration values, see the documentation:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 
+from __future__ import annotations  # c.f. PEP 563, PEP 649
 
 import inspect
 import subprocess
 import sys
 from datetime import date
 from importlib import import_module
-from typing import Optional
+from typing import TYPE_CHECKING
 
 from sphinx_gallery.sorting import FileNameSortKey
 
-import template
+import eeg_wiki
+
+if TYPE_CHECKING:
+    from typing import Optional
 
 # -- project information ---------------------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
@@ -21,8 +25,8 @@ import template
 project = "template-python"
 author = "Mathieu Scheltienne"
 copyright = f"{date.today().year}, {author}"
-release = template.__version__
-package = template.__name__
+release = eeg_wiki.__version__
+package = eeg_wiki.__name__
 gh_url = "https://github.com/mscheltienne/template-python"
 
 # -- general configuration -------------------------------------------------------------

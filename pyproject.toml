@@ -23,27 +23,31 @@ dependencies = [
   'packaging',
   'psutil',
 ]
-description = 'Template for python projects.'
+description = 'Wiki for the EEG platform at the Human Neuroscience Platform in Geneva.'
 keywords = [
+  'eeg',
+  'neuroscience',
   'python',
-  'template',
+  'tests',
+  'timings',
+  'wiki',
 ]
 license = {file = 'LICENSE'}
 maintainers = [
   {email = 'mathieu.scheltienne@fcbg.ch', name = 'Mathieu Scheltienne'},
 ]
-name = 'template'
+name = 'eeg_wiki'
 readme = 'README.md'
 requires-python = '>=3.9'
 version = '0.1.0'
 
 [project.optional-dependencies]
 all = [
-  'template[build]',
-  'template[doc]',
-  'template[stubs]',
-  'template[style]',
-  'template[test]',
+  'eeg_wiki[build]',
+  'eeg_wiki[doc]',
+  'eeg_wiki[stubs]',
+  'eeg_wiki[style]',
+  'eeg_wiki[test]',
 ]
 build = [
   'build',
@@ -62,7 +66,7 @@ doc = [
   'sphinxcontrib-bibtex',
 ]
 full = [
-  'template[all]',
+  'eeg_wiki[all]',
 ]
 stubs = [
   'isort',
@@ -85,13 +89,13 @@ test = [
 ]
 
 [project.scripts]
-template-sys_info = 'template.commands.sys_info:run'
+eeg_wiki-sys_info = 'eeg_wiki.commands.sys_info:run'
 
 [project.urls]
-documentation = 'https://github.com/mscheltienne/template-python'
-homepage = 'https://github.com/mscheltienne/template-python'
-source = 'https://github.com/mscheltienne/template-python'
-tracker = 'https://github.com/mscheltienne/template-python/issues'
+documentation = 'https://eeg-wiki.hnp.fcbg.ch/'
+homepage = 'https://eeg-wiki.hnp.fcbg.ch/'
+source = 'https://github.com/fcbg-hnp-meeg/eeg_wiki'
+tracker = 'https://github.com/fcbg-hnp-meeg/eeg_wiki/issues'
 
 [tool.codespell]
 check-filenames = true
@@ -113,16 +117,15 @@ cover_pylib = false
 omit = [
   '**/__init__.py',
   '**/conftest.py',
-  '**/template/_version.py',
-  '**/template/commands/*',
-  '**/template/utils/_fixes.py',
+  '**/eeg_wiki/_version.py',
+  '**/eeg_wiki/commands/*',
+  '**/eeg_wiki/utils/_fixes.py',
   '**/tests/**',
 ]
 
 [tool.isort]
 extend_skip_glob = [
   'doc/*',
-  'examples/*',
   'tutorials/*',
 ]
 line_length = 88
@@ -135,7 +138,7 @@ add_ignore = 'D100,D104,D107'
 convention = 'numpy'
 ignore-decorators = '(copy_doc|property|.*setter|.*getter|pyqtSlot|Slot)'
 match = '^(?!__init__|test_).*\.py'
-match-dir = '^template.*'
+match-dir = '^eeg_wiki.*'
 
 [tool.pytest.ini_options]
 addopts = '--durations 20 --junit-xml=junit-results.xml --verbose'
@@ -168,8 +171,8 @@ select = ['A', 'B', 'E', 'F', 'UP', 'W']
 include-package-data = false
 
 [tool.setuptools.packages.find]
-exclude = ['template*tests']
-include = ['template*']
+exclude = ['eeg_wiki*tests']
+include = ['eeg_wiki*']
 
 [tool.tomlsort]
 all = true
