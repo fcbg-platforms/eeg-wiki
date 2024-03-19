@@ -1,7 +1,7 @@
 Logging
 =======
 
-.. currentmodule:: template
+.. currentmodule:: eeg_wiki
 
 .. autosummary::
     :toctree: generated/
