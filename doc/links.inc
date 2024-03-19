@@ -10,42 +10,10 @@
 
 .. project
 
-.. _project pypi: https://pypi.org/project/template-python/
-.. _project conda: https://anaconda.org/conda-forge/template-python
-.. _project github: https://github.com/mscheltienne/template-python
-.. _project citation: https://github.com/mscheltienne/template-python/blob/main/CITATION.cff
-.. _project license: https://github.com/mscheltienne/template-python/blob/main/LICENSE
+.. _project github: https://github.com/fcbg-hnp-meeg/eeg-wiki
+.. _project license: https://github.com/fcbg-hnp-meeg/eeg-wiki/blob/main/LICENSE
 
 
 .. license
 
 .. _MIT license: https://opensource.org/licenses/MIT
-
-
-.. mne
-
-.. _mne stable: https://mne.tools/stable/index.html
-.. _mne bids: https://mne.tools/mne-bids/stable/index.html
-.. _mne connectivity: https://mne.tools/mne-connectivity/stable/index.html
-.. _mne icalabel: https://mne.tools/mne-icalabel/dev/index.html
-.. _autoreject: https://autoreject.github.io/stable/index.html
-
-
-.. numpy
-
-.. _numpy: https://numpy.org/
-
-
-.. psychopy
-
-.. _psychopy: https://www.psychopy.org/
-
-
-.. sklearn
-
-.. _scikit-learn: https://scikit-learn.org/stable/
-
-
-.. scipy
-
-.. _scipy: https://scipy.org/
