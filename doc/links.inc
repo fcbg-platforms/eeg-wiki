@@ -8,12 +8,20 @@
    nipy, NIPY, Nipy, etc...
 
 
+.. glossary
+
+.. _rst: https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html
+
+
 .. project
 
 .. _project github: https://github.com/fcbg-hnp-meeg/eeg-wiki
+.. _project github doc: https://github.com/fcbg-hnp-meeg/eeg-wiki/tree/main/doc
+.. _project issue tracker: https://github.com/fcbg-hnp-meeg/eeg-wiki/issues
 .. _project license: https://github.com/fcbg-hnp-meeg/eeg-wiki/blob/main/LICENSE
 
 
-.. license
+.. software
 
-.. _MIT license: https://opensource.org/licenses/MIT
+.. _pre-commit: https://pre-commit.com/
+.. _sphinx-gallery: https://sphinx-gallery.github.io/stable/index.html
