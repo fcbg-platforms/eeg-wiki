@@ -15,6 +15,11 @@
 .. _rst: https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html
 
 
+.. others
+
+.. _calpendo: https://campusbiotech.calpendo.com/
+
+
 .. project
 
 .. _project github: https://github.com/fcbg-hnp-meeg/eeg-wiki
