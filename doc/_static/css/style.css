@@ -2,3 +2,6 @@ div.sphx-glr-download-link-note {
   height: 0px;
   visibility: hidden;
 }
+.img-with-border img {
+  border: 4px solid #131416;
+}

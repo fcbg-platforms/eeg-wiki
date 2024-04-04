@@ -24,13 +24,13 @@
 Wiki for the EEG systems at the Human Neuroscience Platform, Campus Biotech, Geneva.
 
 .. image:: ./_static/map/h4-dark.png
-    :class: only-dark
     :align: right
+    :class: only-dark
     :width: 440
 
 .. image:: ./_static/map/h4-light.png
-    :class: only-light
     :align: right
+    :class: only-light
     :width: 440
 
 Where to find us

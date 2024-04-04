@@ -14,7 +14,6 @@ __pycache__/
 build/
 develop-eggs/
 dist/
-downloads/
 eggs/
 .eggs/
 lib/
@@ -72,6 +71,7 @@ instance/
 doc/_build/
 doc/generated/
 doc/api/generated/
+doc/sg_execution_times.rst
 
 # PyBuilder
 target/
