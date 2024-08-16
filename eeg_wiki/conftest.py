@@ -3,10 +3,10 @@ from __future__ import annotations  # c.f. PEP 563, PEP 649
 from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
-    from pytest import Config
+    import pytest
 
 
-def pytest_configure(config: Config) -> None:
+def pytest_configure(config: pytest.Config) -> None:
     """Configure pytest options."""
     warnings_lines = r"""
     error::
