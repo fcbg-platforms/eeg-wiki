@@ -124,7 +124,6 @@ intersphinx_mapping = {
     "python": ("https://docs.python.org/3", None),
     "scipy": ("https://docs.scipy.org/doc/scipy", None),
     "sklearn": ("https://scikit-learn.org/stable/", None),
-    "stimuli": ("https://mscheltienne.github.io/simple-stimuli/dev/", None),
 }
 intersphinx_timeout = 5
 
