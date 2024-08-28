@@ -32,4 +32,6 @@
 
 .. _mne stable: https://mne.tools/stable/index.html
 .. _pre-commit: https://pre-commit.com/
+.. _psychopy: https://www.psychopy.org/
+.. _psychtoolbox: http://psychtoolbox.org/
 .. _sphinx-gallery: https://sphinx-gallery.github.io/stable/index.html
