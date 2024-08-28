@@ -32,7 +32,7 @@ jobs:
           python -m pip install --progress-bar off --upgrade pip setuptools
           python -m pip install --progress-bar off .[doc]
       - name: Display system information
-        run: eeg_wiki-sys_info --developer
+        run: eeg-wiki sys-info --developer
       - name: Build doc
         run: make -C doc html
       - name: Prune sphinx environment

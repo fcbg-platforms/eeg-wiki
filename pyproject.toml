@@ -19,6 +19,7 @@ classifiers = [
   'Programming Language :: Python :: 3.9',
 ]
 dependencies = [
+  'click',
   'numpy>=1.21',
   'packaging',
   'psutil',
@@ -87,7 +88,7 @@ test = [
 ]
 
 [project.scripts]
-eeg_wiki-sys_info = 'eeg_wiki.commands.sys_info:run'
+eeg-wiki = 'eeg_wiki.commands.main:run'
 
 [project.urls]
 documentation = 'https://eeg-wiki.hnp.fcbg.ch/'
@@ -116,7 +117,6 @@ omit = [
   '**/__init__.py',
   '**/conftest.py',
   '**/eeg_wiki/_version.py',
-  '**/eeg_wiki/commands/*',
   '**/eeg_wiki/utils/_fixes.py',
   '**/tests/**',
 ]
