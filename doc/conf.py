@@ -78,8 +78,8 @@ suppress_warnings = ["config.cache"]
 html_css_files = [
     "css/style.css",
 ]
-html_favicon = "_static/icons/HNP_MEEG_short.svg"
-html_logo = "_static/icons/HNP_MEEG_short.svg"
+html_favicon = "_static/icons/FCBG.svg"
+html_logo = "_static/icons/FCBG.svg"
 html_permalinks_icon = "🔗"
 html_show_sphinx = False
 html_static_path = ["_static"]
