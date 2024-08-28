@@ -100,7 +100,7 @@ for k in range(10):
 # `Psychtoolbox`_ backend, wait for the scheduling duration, and deliver the trigger.
 # With this method, the trigger to sound delay should be less than 1 ms.
 #
-# .. figure:: ../../../_static/stimulation-tutorials/trigger-sound-delay-epochs.png
+# .. figure:: ../../_static/tutorials/trigger-sound-delay-epochs.png
 #     :align: center
 #     :alt: Epochs showing the trigger to sound delay
 #
@@ -108,7 +108,7 @@ for k in range(10):
 # Measuring algorithmically the delay between the trigger and the sound is possible
 # through a threshold on the absolute value of the hilbert transformed signal, yielding:
 #
-# .. figure:: ../../../_static/stimulation-tutorials/trigger-sound-delay-hist.png
+# .. figure:: ../../_static/tutorials/trigger-sound-delay-hist.png
 #     :align: center
 #     :alt: Epochs showing the trigger to sound delay
 #
