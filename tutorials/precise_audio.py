@@ -94,6 +94,7 @@ for k in range(10):
     high_precision_sleep(0.2)  # wait for 200 ms
     trigger.signal(1)  # send the trigger
     print(f"Sound {k + 1} delivered.")
+    high_precision_sleep(0.5)  # wait between sounds
 
 # %%
 # The key elements are to schedule the sound with the ``when`` argument of the
