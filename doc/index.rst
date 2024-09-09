@@ -7,6 +7,12 @@
 
 .. toctree::
     :hidden:
+    :caption: EEG systems
+
+    ant-neuro.rst
+
+.. toctree::
+    :hidden:
     :caption: Resources
 
     MNE-Python <https://mne.tools/stable/index.html>
