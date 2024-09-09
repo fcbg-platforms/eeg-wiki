@@ -41,7 +41,7 @@ channel can be connected. Typically, a DB-25 (parallel port) cable is used.
     the appropriate trigger cable must be used to link and synchronize the amplifiers
     together. In this case, the trigger cable included an external power source (either
     battery or USB) which constantly delivers triggers on the data pin 8 of the DB-25
-    port. In this case, do not use any trigger value that would ue the data pin 8, i.e.
+    port. In this case, do not use any trigger value that would use the data pin 8, i.e.
     do not use values above 127.
 
 Acquisition software
