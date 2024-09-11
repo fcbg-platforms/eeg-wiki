@@ -22,10 +22,10 @@
 
 .. project
 
-.. _project github: https://github.com/fcbg-hnp-meeg/eeg-wiki
-.. _project github doc: https://github.com/fcbg-hnp-meeg/eeg-wiki/tree/main/doc
-.. _project issue tracker: https://github.com/fcbg-hnp-meeg/eeg-wiki/issues
-.. _project license: https://github.com/fcbg-hnp-meeg/eeg-wiki/blob/main/LICENSE
+.. _project github: https://github.com/fcbg-platforms/eeg-wiki
+.. _project github doc: https://github.com/fcbg-platforms/eeg-wiki/tree/main/doc
+.. _project issue tracker: https://github.com/fcbg-platforms/eeg-wiki/issues
+.. _project license: https://github.com/fcbg-platforms/eeg-wiki/blob/main/LICENSE
 
 
 .. software

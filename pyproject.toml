@@ -91,10 +91,10 @@ test = [
 eeg-wiki = 'eeg_wiki.commands.main:run'
 
 [project.urls]
-documentation = 'https://eeg-wiki.hnp.fcbg.ch/'
-homepage = 'https://eeg-wiki.hnp.fcbg.ch/'
-source = 'https://github.com/fcbg-hnp-meeg/eeg_wiki'
-tracker = 'https://github.com/fcbg-hnp-meeg/eeg_wiki/issues'
+documentation = 'https://eeg-wiki.fcbg.ch/'
+homepage = 'https://eeg-wiki.fcbg.ch/'
+source = 'https://github.com/fcbg-platforms/eeg_wiki'
+tracker = 'https://github.com/fcbg-platforms/eeg_wiki/issues'
 
 [tool.codespell]
 check-filenames = true

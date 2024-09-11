@@ -1,15 +1,15 @@
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Imports: isort](https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat&labelColor=ef8336)](https://pycqa.github.io/isort/)
-[![codecov](https://codecov.io/gh/fcbg-hnp-meeg/eeg-wiki/graph/badge.svg?token=Q0C5iArdA5)](https://codecov.io/gh/fcbg-hnp-meeg/eeg-wiki)
-[![tests](https://github.com/fcbg-hnp-meeg/eeg-wiki/actions/workflows/pytest.yaml/badge.svg?branch=main)](https://github.com/fcbg-hnp-meeg/eeg-wiki/actions/workflows/pytest.yaml)
-[![doc](https://github.com/fcbg-hnp-meeg/eeg-wiki/actions/workflows/doc.yaml/badge.svg?branch=main)](https://github.com/fcbg-hnp-meeg/eeg-wiki/actions/workflows/doc.yaml)
+[![codecov](https://codecov.io/gh/fcbg-platforms/eeg-wiki/graph/badge.svg?token=Q0C5iArdA5)](https://codecov.io/gh/fcbg-platforms/eeg-wiki)
+[![tests](https://github.com/fcbg-platforms/eeg-wiki/actions/workflows/pytest.yaml/badge.svg?branch=main)](https://github.com/fcbg-platforms/eeg-wiki/actions/workflows/pytest.yaml)
+[![doc](https://github.com/fcbg-platforms/eeg-wiki/actions/workflows/doc.yaml/badge.svg?branch=main)](https://github.com/fcbg-platforms/eeg-wiki/actions/workflows/doc.yaml)
 
 # EEG wiki
 
-The EEG-wiki is available at the address: https://eeg-wiki.hnp.fcbg.ch
+The EEG-wiki is available at the address: https://eeg-wiki.fcbg.ch
 Contributions in all forms are welcome. Please use the
-[issue tracker](https://github.com/fcbg-hnp-meeg/eeg-wiki/issues) to propose changes,
+[issue tracker](https://github.com/fcbg-platforms/eeg-wiki/issues) to propose changes,
 additions and report issues and solutions found when working with MEG data from our
 site.
 
@@ -20,7 +20,7 @@ site.
 Pull request to the repository are welcome. The wiki is organized as a python project
 with a sphinx documentation. The documentation, used to generate the website HTML pages,
 is written in reStructuredText format in the
-[doc](https://github.com/fcbg-hnp-meeg/eeg-wiki/tree/main/doc) folder.
+[doc](https://github.com/fcbg-platforms/eeg-wiki/tree/main/doc) folder.
 
 In a pull request, the automatic workflows will build the documentation and check for
 conformity. Any warnings and errors during the build process must be resolved before the
@@ -54,4 +54,4 @@ The documentation can be build from the `eeg-wiki/doc` folder with `make` comman
 ## Additional information
 
 Additional information can be found on the
-[contributing guide](https://eeg-wiki.hnp.fcbg.ch/contributing.html).
+[contributing guide](https://eeg-wiki.fcbg.ch/contributing.html).

@@ -7,7 +7,7 @@ installed with ``pip`` from source:
 
 .. code-block:: bash
 
-    $ pip install git+https://github.com/fcbg-hnp-meeg/eeg-wiki
+    $ pip install git+https://github.com/fcbg-platforms/eeg-wiki
 
 .. toctree::
     :maxdepth: 2
