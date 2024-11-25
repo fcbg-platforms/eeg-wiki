@@ -1,3 +1,5 @@
+.. include:: ./links.inc
+
 ANT Neuro
 =========
 
@@ -15,17 +17,18 @@ Connectivity
 The EEG amplifier is connected to the computer via a single USB-3 cable type-A to
 type-B. All data is transmitted via USB. It doesn't require any additional power supply
 and should run on battery. However, if the battery is low, it can be connected to an
-external DC power supply supplying 12V and 4 A. Typically, an XT-20000QC3 external power
-bank is used.
+external DC power supply supplying 12V and 4 A. Typically, an `XT-20000QC3`_ external
+power bank is used.
 
 .. warning::
 
-    Before connecting the power bank to the amplifier, make sure it is set to 12V.
+    Before connecting the power bank to the amplifier, make sure it is set to 12V or it
+    will damange the amplifier.
 
 Additionally, the amplifier can be connected to auxiliary channels. ANT provides 4
 auxiliary boxes, alphabetically labeled ``A``, ``B``, ``C``, and ``D``. The box ``A``
-has active channels which records an external DC 5V power supply. Typically, a USB can
-be used, e.g. an USB from the XT-20000QC3 power bank. The other boxes have passive
+has active channels which requires an external DC 5V power supply. Typically, a USB can
+be used, e.g. an USB from the `XT-20000QC3`_ power bank. The other boxes have passive
 bipolar channels.
 
 Auxiliary boxes should be connected in a daisy chain, alphabetically ordered. If all 4
@@ -39,10 +42,27 @@ channel can be connected. Typically, a DB-25 (parallel port) cable is used.
 
     If you are using 2 amplifiers together for 128 channels, or 4 amplifiers together,
     the appropriate trigger cable must be used to link and synchronize the amplifiers
-    together. In this case, the trigger cable included an external power source (either
+    together. In this case, the trigger cable includes an external power source (either
     battery or USB) which constantly delivers triggers on the data pin 8 of the DB-25
     port. In this case, do not use any trigger value that would use the data pin 8, i.e.
     do not use values above 127.
+
+    .. warning::
+
+        If you use a trigger cable on battery, desynchronization errors/disconnection
+        errors might be due to a dead battery. Try to replace it.
+
+    .. warning::
+
+        If you use a trigger cable with a USB connector, do not plug it on an external
+        battery or on the `XT-20000QC3`_ power bank. The trigger cable won't pull enough
+        power from the USB port which will result in the battery/power bank shutting
+        down and to the amplifier desynchronization/disconnection.
+
+        Instead, plug the USB connector on either:
+
+        - A computer USB port
+        - A USB power adapter (e.g. a phone charger)
 
 Acquisition software
 --------------------

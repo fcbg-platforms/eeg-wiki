@@ -15,6 +15,11 @@
 .. _rst: https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html
 
 
+.. hardware
+
+.. _XT-20000QC3: https://xtpower.de/XT-20000QC3/
+
+
 .. others
 
 .. _calpendo: https://campusbiotech.calpendo.com/
