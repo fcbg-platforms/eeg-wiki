@@ -56,3 +56,31 @@ channel can be connected. Typically, a DB-25 (parallel port) cable is used.
 
         - A computer USB port
         - A USB power adapter (e.g. a phone charger)
+
+Complete setup example
+----------------------
+
+Below is an example of a complete setup with an ANT amplifier powered by its internal
+battery and by an external `XT-20000QC3`_ power bank with:
+
+- 3 auxiliary boxes connected ``A``, ``B``, and ``C``. The auxialiary box A is powered
+  by the `XT-20000QC3`_ power bank.
+- A trigger to parallel port cable to deliber TTL pulses from a stimulation PC/device.
+- A USB-3 cable to connect the recording PC.
+
+.. image:: ../_static/ant-neuro/full-setup.jpg
+    :align: center
+    :class: img-with-border
+    :width: 80%
+
+Minimal setup example
+---------------------
+
+Below is a more minimalistic setup with an ANT amplifier powered by its internal battery
+with only a USB-3 cable to connect a recording PC, a trigger to parallel port cable to
+connect to a stimulation PC/device, and a single auxiliary box connected.
+
+.. image:: ../_static/ant-neuro/partial-setup.jpg
+    :align: center
+    :class: img-with-border
+    :width: 80%
