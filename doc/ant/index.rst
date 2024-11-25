@@ -6,7 +6,7 @@ EEG channels and 24 auxiliary channels. The amplifiers can be cascaded together 
 support 128 channels (2 amplifiers) or 256 channels (4 amplifiers).
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
     connectivity.rst
     software.rst
