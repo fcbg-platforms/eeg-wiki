@@ -9,7 +9,7 @@
     :hidden:
     :caption: EEG systems
 
-    ant-neuro.rst
+    ant/index.rst
 
 .. toctree::
     :hidden:

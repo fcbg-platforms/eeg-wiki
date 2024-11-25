@@ -1,16 +1,9 @@
-.. include:: ./links.inc
-
-ANT Neuro
-=========
-
-4 ANT Neuro mylab amplifiers are available on the platform. Each amplifier supports 64
-EEG channels and 24 auxiliary channels. The amplifiers can be cascaded together to
-support 128 channels (2 amplifiers) or 256 channels (4 amplifiers).
+.. include:: ../links.inc
 
 Connectivity
-------------
+============
 
-.. image:: ./_static/ant-neuro/XT-20000QC3.png
+.. image:: ../_static/ant-neuro/XT-20000QC3.png
     :align: right
     :width: 200
 
@@ -63,16 +56,3 @@ channel can be connected. Typically, a DB-25 (parallel port) cable is used.
 
         - A computer USB port
         - A USB power adapter (e.g. a phone charger)
-
-Acquisition software
---------------------
-
-The acquisition software is called ``eego``.
-
-Selecting the number of amplifiers
-----------------------------------
-
-When connecting the amplifiers to the recording computer, the ``eego`` software might
-already be set with the correct number of amplifiers or not. If not, you have to
-change the number of amplifiers before starting an acquisition workflow or you won't be
-able to select the desired amplifier settings and montage for your cap.
