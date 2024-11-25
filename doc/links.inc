@@ -1,3 +1,5 @@
+.. _arduino-trigger: https://github.com/fcbg-platforms/arduino-trigger
+.. _byte_triggers: https://fcbg-platforms.github.io/byte-triggers/
 .. _calpendo: https://campusbiotech.calpendo.com/
 .. _lab streaming layer: https://labstreaminglayer.org/
 .. _liblsl repo: https://github.com/sccn/liblsl
@@ -18,4 +20,5 @@
 .. _pylsl: https://github.com/labstreaminglayer/pylsl/tree/21fbbc30811fe151992654cdc5fa62a9a0f4d0be
 .. _rst: https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html
 .. _sphinx-gallery: https://sphinx-gallery.github.io/stable/index.html
+.. _stimuli: https://mscheltienne.github.io/stimuli/
 .. _XT-20000QC3: https://xtpower.de/XT-20000QC3/
