@@ -16,7 +16,7 @@ power bank is used.
 .. warning::
 
     Before connecting the power bank to the amplifier, make sure it is set to 12V or it
-    will damange the amplifier.
+    will damage the amplifier.
 
 Additionally, the amplifier can be connected to auxiliary channels. ANT provides 4
 auxiliary boxes, alphabetically labeled ``A``, ``B``, ``C``, and ``D``. The box ``A``
@@ -63,7 +63,7 @@ Complete setup example
 Below is an example of a complete setup with an ANT amplifier powered by its internal
 battery and by an external `XT-20000QC3`_ power bank with:
 
-- 3 auxiliary boxes connected ``A``, ``B``, and ``C``. The auxialiary box A is powered
+- 3 auxiliary boxes connected ``A``, ``B``, and ``C``. The auxiliary box A is powered
   by the `XT-20000QC3`_ power bank.
 - A trigger to parallel port cable to deliber TTL pulses from a stimulation PC/device.
 - A USB-3 cable to connect the recording PC.

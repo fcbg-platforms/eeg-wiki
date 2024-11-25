@@ -118,6 +118,7 @@ intersphinx_mapping = {
     "byte_triggers": ("https://fcbg-platforms.github.io/byte-triggers/", None),
     "matplotlib": ("https://matplotlib.org/stable", None),
     "mne": ("https://mne.tools/stable/", None),
+    "mne-lsl": ("https://mne.tools/mne-lsl/stable/", None),
     "numpy": ("https://numpy.org/doc/stable", None),
     "pandas": ("https://pandas.pydata.org/pandas-docs/stable/", None),
     "psychopy": ("https://psychopy.org/", None),
