@@ -35,7 +35,7 @@ Auxiliary boxes should be connected in a daisy chain, alphabetically ordered. If
 boxes are used, the order is ``Amplifier <- A <- B <- C <- D``. Any box can be removed
 from the chain, but the order must be preserved.
 
-Finally, a stimulation device or computer delivering TTL pulses on the 'trigger'
+Finally, a stimulation device or computer delivering TTL pulses on the ``trigger``
 channel can be connected. Typically, a DB-25 (parallel port) cable is used.
 
 .. note::
