@@ -1,3 +1,4 @@
+.. _ant-eego-mylab: https://www.ant-neuro.com/products/eego-mylab
 .. _arduino-trigger: https://github.com/fcbg-platforms/arduino-trigger
 .. _byte_triggers: https://fcbg-platforms.github.io/byte-triggers/
 .. _calpendo: https://campusbiotech.calpendo.com/
