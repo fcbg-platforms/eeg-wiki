@@ -73,3 +73,8 @@ to manually install or compile the library.
         Or you can set the environment variable ``MNE_LSL_SKIP_LIBLSL_BUILD=1`` to skip
         the building phase of `liblsl`_ and provide your own compiled version in the
         environment variable ``MNE_LSL_LIB`` or ``PYLSL_LIB``.
+
+MATLAB interface
+----------------
+
+A MATLAB interface is available `here <matlab lsl_>`_.
