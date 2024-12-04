@@ -18,7 +18,10 @@ peripherals.
     voltage is set to 12V or it will damage the amplifier. To modify the output voltage,
     hold the power button.
 
-# TODO: add picture of the amplifier + AUX A powered by the power bank.
+.. image:: ../_static/ant-neuro/ant-with-battery.jpg
+    :align: center
+    :class: img-with-border
+    :width: 80%
 
 .. warning::
 
