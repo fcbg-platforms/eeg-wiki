@@ -12,27 +12,17 @@ jobs:
   generate:
     timeout-minutes: 10
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        shell: bash
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-      - name: Setup Python 3.9
-        uses: actions/setup-python@v5
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
-          python-version: 3.9
-          architecture: 'x64'
-      - name: Install package
-        run: |
-          python -m pip install --progress-bar off --upgrade pip setuptools
-          python -m pip install --progress-bar off -e .[stubs]
-      - name: Display system information
-        run: eeg-wiki sys-info --developer
-      - name: Generate stub files
-        run: python tools/stubgen.py
+          python-version: 3.11
+      - uses: astral-sh/setup-uv@v4
+      - run: uv pip install --quiet --system -e .[stubs]
+      - run: eeg-wiki sys-info --developer
+      - run: python tools/stubgen.py
       - name: Push stub files
-        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        if: ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }}
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'

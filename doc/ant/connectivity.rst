@@ -3,62 +3,66 @@
 Connectivity
 ============
 
-.. image:: ../_static/ant-neuro/XT-20000QC3.png
-    :align: right
-    :width: 200
+Basic connectivity
+------------------
 
 The EEG amplifier is connected to the computer via a single USB-3 cable type-A to
 type-B. All data is transmitted via USB. It doesn't require any additional power supply
-and should run on battery. However, if the battery is low, it can be connected to an
-external DC power supply supplying 12V and 4 A. Typically, an `XT-20000QC3`_ external
-power bank is used.
+and runs on an internal battery which last ~8 hours.
 
-.. warning::
-
-    Before connecting the power bank to the amplifier, make sure it is set to 12V or it
-    will damage the amplifier.
+.. image:: ../_static/ant-neuro/ant-with-laptop.jpg
+    :align: center
+    :class: img-with-border
+    :width: 80%
 
 Additionally, the amplifier can be connected to auxiliary channels. ANT provides 4
 auxiliary boxes, alphabetically labeled ``A``, ``B``, ``C``, and ``D``. The box ``A``
-has active channels which requires an external DC 5V power supply. Typically, a USB can
-be used, e.g. an USB from the `XT-20000QC3`_ power bank. The other boxes have passive
-bipolar channels.
+has active channels which requires an external DC 5V power supply from a USB cable.
+See the :ref:`ant/battery:External battery` section for more information.
 
 Auxiliary boxes should be connected in a daisy chain, alphabetically ordered. If all 4
 boxes are used, the order is ``Amplifier <- A <- B <- C <- D``. Any box can be removed
 from the chain, but the order must be preserved.
 
-Finally, a stimulation device or computer delivering TTL pulses on the ``trigger``
+.. image:: ../_static/ant-neuro/ant-with-auxiliary.jpg
+    :align: center
+    :class: img-with-border
+    :width: 80%
+
+A stimulation device or computer delivering TTL pulses on the ``trigger``
 channel can be connected. Typically, a DB-25 (parallel port) cable is used.
 
-Minimal setup example
----------------------
-
-Below is a minimalistic setup with an ANT amplifier powered by its internal battery
-with only a USB-3 cable to connect a recording PC, a trigger to parallel port cable to
-connect to a stimulation PC/device, and a single auxiliary box connected with bipolars
-connectors.
-
-.. image:: ../_static/ant-neuro/partial-setup.jpg
+.. image:: ../_static/ant-neuro/ant-with-trigger.jpg
     :align: center
     :class: img-with-border
     :width: 80%
 
-Complete setup example
-----------------------
+Each cap has 2 connectors labelled 1 and 2 which connects to the front of the amplifier.
 
-Below is an example of a complete setup with an ANT amplifier powered by its internal
-battery and by an external `XT-20000QC3`_ power bank with:
+.. warning::
 
-- 3 auxiliary boxes connected ``A``, ``B``, and ``C``. The auxiliary box A is powered
-  by the `XT-20000QC3`_ power bank.
-- A trigger to parallel port cable to deliber TTL pulses from a stimulation PC/device.
-- A USB-3 cable to connect the recording PC.
+    The connector 2 goes on the **left** and the connector 1 goes on the **right**.
 
-.. image:: ../_static/ant-neuro/full-setup.jpg
-    :align: center
-    :class: img-with-border
-    :width: 80%
+64 channels
+-----------
+
+Below you can find examples of 64 channels amplifier setups.
+
+.. tab-set::
+
+    .. tab-item:: Minimal setup
+
+        .. image:: ../_static/ant-neuro/partial-setup.jpg
+            :align: center
+            :class: img-with-border
+            :width: 80%
+
+    .. tab-item:: Complete setup
+
+        .. image:: ../_static/ant-neuro/full-setup.jpg
+            :align: center
+            :class: img-with-border
+            :width: 80%
 
 128 channels or 256 channels
 ----------------------------
@@ -91,12 +95,10 @@ internally to deliver synchronization pulses to all amplifiers.
     - A computer USB port
     - A USB power adapter (e.g. a phone charger)
 
-The 128 channels or 256 channels caps and trigger cables are labeled with either:
+The 128 channels or 256 channels caps and trigger cables are labeled with letters:
 
-- a number ``1`` or ``2`` for 128 channels or ``1``, ``2``, ``3``, or ``4`` for 256
-  channels
-- a letter ``A`` or ``B`` for 128 channels or ``A``, ``B``, ``C``, or ``D`` for 256
-  channels
+- ``A`` or ``B`` for 128 channels
+- ``A``, ``B``, ``C``, or ``D`` for 256 channels
 
 It is **extremely important** to plug the right cable in the right amplifier. The
 amplifier serial number should be increasing from the first amplifier connected to the
@@ -104,7 +106,7 @@ last one.
 
 .. note::
 
-    On the platform, with labeled our amplifiers ``ANT Neuro 1``, ``ANT Neuro 2``,
+    On the platform, we labeled our amplifiers ``ANT Neuro 1``, ``ANT Neuro 2``,
     ``ANT Neuro 3``, and ``ANT Neuro 4``; with an increasing serial number.
 
     - ``ANT Neuro 1`` S/N 000325
@@ -112,12 +114,8 @@ last one.
     - ``ANT Neuro 3`` S/N 000650
     - ``ANT Neuro 4`` S/N 000697
 
-    Thus, you can plug the cap/trigger cable with the lower number/letter on the
-    amplifier with the lower number, and increase the number/letter for the next
-    amplifier.
-
-Below is an example of a 128 channels setup with 2 ANT amplifiers powered by their
-internal batteries with a single auxilibary box connected with bipolars connectors.
+    Thus, you can plug the cap/trigger cable with the lower letter on the amplifier with
+    the lower number, and increase the number/letter for the next amplifier.
 
 .. tab-set::
 
@@ -126,16 +124,14 @@ internal batteries with a single auxilibary box connected with bipolars connecto
         In this case, a USB-powered trigger cable is used. Do not plug it on an external
         battery but either on a computer USB port or a USB power adapter.
 
-        .. image:: ../_static/ant-neuro/128ch-unstack.jpg
+        .. image:: ../_static/ant-neuro/ant-128ch-trigger-usb-with-aux.png
             :align: center
             :class: img-with-border
             :width: 80%
 
     .. tab-item:: Stacked
 
-        It is common to stack the 2 of 4 amplifiers on top of each other.
-
-        .. image:: ../_static/ant-neuro/128ch-stack.jpg
+        .. image:: ../_static/ant-neuro/ant-128ch-trigger-usb-with-aux-stacked.png
             :align: center
             :class: img-with-border
             :width: 80%
@@ -146,7 +142,10 @@ internal batteries with a single auxilibary box connected with bipolars connecto
         that the ``ON`` switch is enabled. Make sure to turn ``OFF`` the trigger cable
         when not in use to save battery.
 
-        .. image:: ../_static/ant-neuro/128ch-stack-battery.jpg
+        .. image:: ../_static/ant-neuro/ant-128ch-trigger-bat-with-aux-stacked.jpg
             :align: center
             :class: img-with-border
             :width: 80%
+
+The auxiliary boxes should be connected to the amplifier ``A``, i.e. the amplifier with
+the lowest number.
