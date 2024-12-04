@@ -1,6 +1,6 @@
 .. include:: ../links.inc
 
-ActiCHamp
+actiCHamp
 =========
 
 A BrainProduct `actiCHamp`_ amplifier is available on the platform.

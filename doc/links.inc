@@ -3,7 +3,9 @@
 .. _arduino-trigger: https://github.com/fcbg-platforms/arduino-trigger
 .. _biopac mp160: https://www.biopac.com/product/mp160-system-with-acqknowledge/
 .. _biopac mp36: https://www.biopac.com/product/mp36r-systems/
-.. _BrainAmp MR plus: https://brainvision.com/products/brainamp-mr-plus/
+.. _brainamp mr plus: https://brainvision.com/products/brainamp-mr-plus/
+.. _brainproducts: https://www.brainproducts.com/
+.. _brainvision recorder: https://www.brainproducts.com/solutions/recorder/
 .. _byte_triggers: https://fcbg-platforms.github.io/byte-triggers/
 .. _calpendo: https://campusbiotech.calpendo.com/
 .. _egi ges 400: https://www.egi.com/clinical-division/clinical-division-clinical-products/ges-400-series

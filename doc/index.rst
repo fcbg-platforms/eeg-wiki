@@ -10,9 +10,8 @@
     :caption: EEG systems
 
     ant/index.rst
-    actiCHamp/index.rst
-    brainamp/index.rst
     egi/index.rst
+    brainproduct/index.rst
     biopac/index.rst
     eyelink/index.rst
 
