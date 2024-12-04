@@ -18,7 +18,7 @@ jobs:
         with:
           python-version: 3.11
       - uses: astral-sh/setup-uv@v4
-      - run: uv pip install --quiet --system .[stubs]
+      - run: uv pip install --quiet --system -e .[stubs]
       - run: eeg-wiki sys-info --developer
       - run: python tools/stubgen.py
       - name: Push stub files
