@@ -17,7 +17,7 @@ from sphinx_gallery.sorting import FileNameSortKey
 import eeg_wiki
 
 if TYPE_CHECKING:
-    from typing import Optional
+    pass
 
 # -- project information ---------------------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
@@ -193,7 +193,7 @@ bibtex_bibfiles = ["./references.bib"]
 # https://www.sphinx-doc.org/en/master/usage/extensions/linkcode.html
 
 
-def linkcode_resolve(domain: str, info: dict[str, str]) -> Optional[str]:
+def linkcode_resolve(domain: str, info: dict[str, str]) -> str | None:
     """Determine the URL corresponding to a Python object.
 
     Parameters
