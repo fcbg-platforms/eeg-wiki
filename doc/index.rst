@@ -33,7 +33,7 @@
     generated/tutorials/index.rst
     contributing.rst
 
-Wiki for the EEG systems at the Human Neuroscience Platform, Campus Biotech, Geneva.
+Wiki for the EEG systems at the M/EEG & Neuromod Platform, Campus Biotech, Geneva.
 
 .. image:: ./_static/map/h4-dark.png
     :align: right
@@ -48,19 +48,18 @@ Wiki for the EEG systems at the Human Neuroscience Platform, Campus Biotech, Gen
 Where to find us
 ----------------
 
-The MEEG-BCI facility is located in ``H4.01``. The main entry is in front of the
-Time-out shop. Access to ``H4.01`` is restricted and requires a valid badge.
+The the M/EEG & Neuromod Platform is located in ``H4.01``. The main entry is in front of the
+coffee shop. Access to ``H4.01`` is restricted and requires a valid badge.
 
 Contact us
 ----------
 
-The facility can be contacted on meg@fcbg.ch and eeg@fcbg.ch depending on the modality
-requested. Alternatively, you can contact directly one of the facility members:
+The platform can be contacted on eeg@fcbg.ch depending on the modality
+requested. Alternatively, you can contact directly one of the platform's staff members:
 
 - Gwenael Birot (manager): gwenael.birot@fcbg.ch
 - Jonathan Marquis (technologist): jonathan.marquis@fcbg.ch
-- Mathieu Scheltienne (engineer): mathieu.scheltienne@fcbg.ch
-- Nathalie Philippe (technologist): nathalie.philippe@fcbg.ch
+- Victor Férat (engineer): victor.ferat@fcbg.ch
 - Vincent Rochas (scientist): vincent.rochas@fcbg.ch
 
 |
