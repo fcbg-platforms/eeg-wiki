@@ -58,6 +58,7 @@ doc = [
   'furo',
   'matplotlib',
   'memory-profiler',
+  'myst-parser',
   'numpydoc',
   'sphinx',
   'sphinx-copybutton',
