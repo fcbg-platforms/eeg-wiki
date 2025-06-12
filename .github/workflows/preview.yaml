@@ -1,0 +1,43 @@
+name: pr-preview
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.number }}-${{ github.event.ref }}
+  cancel-in-progress: true
+on:  # yamllint disable-line rule:truthy
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+      - closed
+  workflow_dispatch:
+
+jobs:
+  build:
+    timeout-minutes: 10
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.11
+          architecture: 'x64'
+      - name: Install linux dependencies
+        run: |
+          sudo apt update
+          sudo apt install -y optipng
+      - name: Install package
+        run: python -m pip install --progress-bar off .[doc]
+      - name: Display system information
+        run: eeg-wiki sys-info --developer
+      - name: Build doc
+        run: make -C doc html
+        continue-on-error: true
+      - name: Deploy preview
+        uses: rossjrw/pr-preview-action@v1
+        with:
+          source-dir: ./doc/_build/html
