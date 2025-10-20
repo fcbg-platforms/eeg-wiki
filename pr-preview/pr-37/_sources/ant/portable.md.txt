@@ -1,6 +1,6 @@
 # Portable setup
 
-For experiments that requires participant to freely moves during EEG, a portable miniPC allowing mobile EEG recoridng is avaialble at the platform.
+For experiments that requires participant to freely move during EEG recording, a portable miniPC is available at the platform.
 
 ## Configuration
 
@@ -13,7 +13,7 @@ For this configuration step, you will need a HDMI screen and a keyboard.
 - Choose the network you want to connect to during your experiment.
 - Make sure to tick the `Connect automatically` setting (press `space` to tick/untick settings)
 - Save your changes
-- Get the mini PC IP adress:
+- Get the mini PC IP address:
     ```bash
     ifconfig
     ```
