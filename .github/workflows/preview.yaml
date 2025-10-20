@@ -1,6 +1,7 @@
 name: pr-preview
 permissions:
-  contents: write-all
+  contents: write
+  pull-requests: write
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.number }}-${{ github.event.ref }}
   cancel-in-progress: true
