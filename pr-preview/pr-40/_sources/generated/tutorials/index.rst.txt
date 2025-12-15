@@ -20,7 +20,7 @@ Tutorials
   .. image:: /generated/tutorials/images/thumb/sphx_glr_precise_audio_thumb.png
     :alt:
 
-  :ref:`sphx_glr_generated_tutorials_precise_audio.py`
+  :doc:`/generated/tutorials/precise_audio`
 
 .. raw:: html
 
