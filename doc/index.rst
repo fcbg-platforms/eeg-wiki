@@ -7,6 +7,12 @@
 
 .. toctree::
     :hidden:
+    :caption: EEG caps status
+
+    status/eeg-status.rst
+
+.. toctree::
+    :hidden:
     :caption: EEG systems
 
     ant/index.rst
