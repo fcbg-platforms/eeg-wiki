@@ -1,0 +1,9 @@
+# Status
+
+
+To update current MEG status, you need to create a new column on the `log.csv` file.
+Please keep more recent issues on top on the file.
+
+On can add one of the following status logo:
+    - :octicon:`clock;1em;sd-text-warning` for pending issues.
+    - :octicon:`check-circle;1em;sd-text-success` for closed issues.
