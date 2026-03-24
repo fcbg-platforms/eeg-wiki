@@ -7,7 +7,7 @@
 
 .. toctree::
     :hidden:
-    :caption: EEG caps status
+    :caption: EEG caps
 
     status/eeg-status.rst
 

@@ -1,6 +1,6 @@
 .. include:: ../links.inc
 
-EEG Caps Status
+Status
 ==========
 
 Logs
