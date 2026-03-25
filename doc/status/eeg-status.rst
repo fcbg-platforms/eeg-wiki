@@ -3,8 +3,8 @@
 Status
 ==========
 
-Logs
-----
+EEG caps
+---------
 
 .. csv-table:: EEG Caps Status
    :file: log-test.csv
