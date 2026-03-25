@@ -26,3 +26,8 @@ div.sphx-glr-download-link-note {
       filter: none;
   }
 }
+
+table.eeg-caps-status {
+  font-size: 0.85rem;
+}
+
