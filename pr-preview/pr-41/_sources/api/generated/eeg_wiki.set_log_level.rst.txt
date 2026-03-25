@@ -1,0 +1,9 @@
+﻿eeg\_wiki.set\_log\_level
+=========================
+
+.. currentmodule:: eeg_wiki
+
+.. autofunction:: set_log_level
+
+.. minigallery:: eeg_wiki.set_log_level
+    :add-heading:
