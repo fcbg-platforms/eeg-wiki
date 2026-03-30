@@ -3,9 +3,7 @@
 Status
 ==========
 
-
 To report new faulty/broken electrodes, please use the `eeg caps logbook`_
-
 
 EEG Caps table
 ---------------
