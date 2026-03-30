@@ -33,4 +33,4 @@
 .. _sr research: https://www.sr-research.com/
 .. _stimuli: https://mscheltienne.github.io/stimuli/
 .. _XT-20000QC3: https://xtpower.de/XT-20000QC3/
-.. _eeg caps logbook : https://github.com/fcbg-platforms/eeg-wiki/issues/46
+.. _eeg caps logbook: https://github.com/fcbg-platforms/eeg-wiki/issues/46
