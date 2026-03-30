@@ -1,12 +1,9 @@
 .. include:: ../links.inc
 
-EEG caps
+Status
 ==========
 
 To report new faulty/broken electrodes, please use the `eeg caps logbook`_
-
-Status
----------
 
 
 .. csv-table:: EEG Caps Status
