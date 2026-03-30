@@ -12,4 +12,4 @@ EEG caps
    :header-rows: 1
    :class: eeg-caps-status
 
-To report new faulty/broken electrodes, please use [the online logbook](https://github.com/fcbg-platforms/eeg-wiki/issues/46)
+To report new faulty/broken electrodes, please use the `EEG caps logbook`_.
