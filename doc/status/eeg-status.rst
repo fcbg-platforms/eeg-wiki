@@ -3,8 +3,8 @@
 Status
 ==========
 
-To report new faulty/broken electrodes, please use the `eeg caps logbook`_
 
+To report new faulty/broken electrodes, please use the `eeg caps logbook`_
 
 .. csv-table:: EEG Caps Status
    :file: log-test.csv
