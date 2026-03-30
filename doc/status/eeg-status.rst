@@ -1,9 +1,11 @@
 .. include:: ../links.inc
 
-Status
+EEG caps
 ==========
 
-EEG caps
+To report new faulty/broken electrodes, please use the `eeg caps logbook`_
+
+Status
 ---------
 
 
@@ -13,4 +15,3 @@ EEG caps
    :header-rows: 1
    :class: eeg-caps-status
    
-To report new faulty/broken electrodes, please use the `eeg caps logbook`_
