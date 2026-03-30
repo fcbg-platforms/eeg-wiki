@@ -5,7 +5,9 @@ Status
 
 EEG caps
 ---------
-To report new faulty/broken electrodes, please use [the online logbook](https://github.com/fcbg-platforms/eeg-wiki/issues/46)
+To report new faulty/broken electrodes, please use the online logbook
+
+https://github.com/fcbg-platforms/eeg-wiki/issues/46
 
 .. csv-table:: EEG Caps Status
    :file: log-test.csv
