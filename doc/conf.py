@@ -200,9 +200,12 @@ bibtex_bibfiles = ["./references.bib"]
 # -- sphinx.ext.linkcode ---------------------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/extensions/linkcode.html
 
-html_static_path = ['_static']
+html_static_path = ["_static"]
+
+
 def setup(app):
-    app.add_css_file('custom.css')
+    """Add custom CSS file."""
+    app.add_css_file("custom.css")
 
 
 def linkcode_resolve(domain: str, info: dict[str, str]) -> str | None:

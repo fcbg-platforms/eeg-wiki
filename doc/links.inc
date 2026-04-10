@@ -8,6 +8,7 @@
 .. _brainvision recorder: https://www.brainproducts.com/solutions/recorder/
 .. _byte_triggers: https://fcbg-platforms.github.io/byte-triggers/
 .. _calpendo: https://campusbiotech.calpendo.com/
+.. _eeg caps logbook: https://github.com/fcbg-platforms/eeg-wiki/issues/46
 .. _egi ges 400: https://www.egi.com/clinical-division/clinical-division-clinical-products/ges-400-series
 .. _eyelink 1000 plus: https://www.sr-research.com/eyelink-1000-plus/
 .. _lab streaming layer: https://labstreaminglayer.org/
@@ -33,4 +34,3 @@
 .. _sr research: https://www.sr-research.com/
 .. _stimuli: https://mscheltienne.github.io/stimuli/
 .. _XT-20000QC3: https://xtpower.de/XT-20000QC3/
-.. _eeg caps logbook: https://github.com/fcbg-platforms/eeg-wiki/issues/46
