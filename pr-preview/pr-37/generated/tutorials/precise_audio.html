@@ -11,13 +11,14 @@
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=d111a655" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=7bdb33bb" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery.css?v=d2d258e8" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-binder.css?v=f4aeca0c" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-dataframe.css?v=2082cf3c" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-rendered-html.css?v=1277b6f3" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=8dab3a3b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/style.css?v=d3fb129f" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/style.css?v=d6ac3a63" />
     
     
 
@@ -200,9 +201,10 @@
   <input type="hidden" name="area" value="default">
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
-  <p class="caption" role="heading"><span class="caption-text">EEG caps status</span></p>
+  <p class="caption" role="heading"><span class="caption-text">EEG caps</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../status/eeg-status.html">EEG Status</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../status/eeg-status.html">Status</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/fcbg-platforms/eeg-wiki/issues/46">Report an issue</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">EEG systems</span></p>
 <ul>
@@ -355,10 +357,10 @@ available in Python, especially through the <a class="reference external" href="
 
 <span class="kn">import</span><span class="w"> </span><span class="nn">psychtoolbox</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">ptb</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">byte_triggers</span><span class="w"> </span><span class="kn">import</span> <a href="https://fcbg-platforms.github.io/byte-triggers/generated/api/byte_triggers.ParallelPortTrigger.html#byte_triggers.ParallelPortTrigger" title="byte_triggers.ParallelPortTrigger" class="sphx-glr-backref-module-byte_triggers sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">ParallelPortTrigger</span></a>
-<span class="kn">from</span><span class="w"> </span><span class="nn">psychopy.sound.backend_ptb</span><span class="w"> </span><span class="kn">import</span> <span class="n">SoundPTB</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">psychopy.sound.backend_ptb</span><span class="w"> </span><span class="kn">import</span> <a href="https://psychopy.org/api/sound/playback.html#psychopy.sound.backend_ptb.SoundPTB" title="psychopy.sound.backend_ptb.SoundPTB" class="sphx-glr-backref-module-psychopy-sound-backend_ptb sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">SoundPTB</span></a>
 
 <span class="c1"># create the sound and trigger object</span>
-<span class="n">sound</span> <span class="o">=</span> <span class="n">SoundPTB</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="mf">440.0</span><span class="p">,</span> <span class="n">secs</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">blockSize</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
+<span class="n">sound</span> <span class="o">=</span> <a href="https://psychopy.org/api/sound/playback.html#psychopy.sound.backend_ptb.SoundPTB" title="psychopy.sound.backend_ptb.SoundPTB" class="sphx-glr-backref-module-psychopy-sound-backend_ptb sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">SoundPTB</span></a><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="mf">440.0</span><span class="p">,</span> <span class="n">secs</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">blockSize</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
 <span class="n">trigger</span> <span class="o">=</span> <a href="https://fcbg-platforms.github.io/byte-triggers/generated/api/byte_triggers.ParallelPortTrigger.html#byte_triggers.ParallelPortTrigger" title="byte_triggers.ParallelPortTrigger" class="sphx-glr-backref-module-byte_triggers sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">ParallelPortTrigger</span></a><span class="p">(</span><span class="mh">0x2FB8</span><span class="p">)</span>  <span class="c1"># or &quot;/dev/parport0&quot; on linux</span>
 
 <span class="c1"># loop 10 times and deliver 10 sounds</span>
@@ -434,7 +436,7 @@ thresholding inherently adds jitter to the measure.</p>
         <div class="bottom-of-page">
           <div class="left-details">
             <div class="copyright">
-                Copyright &#169; 2026, Mathieu Scheltienne
+                Copyright &#169; 2026, neuro@campusbiotech
             </div>
             Made with 
             <a href="https://github.com/pradyunsg/furo">Furo</a>
