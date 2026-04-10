@@ -14,3 +14,4 @@ on the `manufacturer website <ant-eego-mylab_>`_.
     connectivity.rst
     software.rst
     battery.rst
+    portable.md
