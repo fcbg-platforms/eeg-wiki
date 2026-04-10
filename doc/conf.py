@@ -202,6 +202,7 @@ bibtex_bibfiles = ["./references.bib"]
 
 html_static_path = ['_static']
 def setup(app):
+    """Add custom CSS file."""
     app.add_css_file('custom.css')
 
 
