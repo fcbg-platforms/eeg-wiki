@@ -1,10 +1,10 @@
 .. include:: ../links.inc
 
 EEG caps
-=========
+==============
 
 Status
----------
+-------------
 
 .. csv-table:: EEG Caps Status
    :file: log-test.csv
