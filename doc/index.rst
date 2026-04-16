@@ -7,7 +7,7 @@
 
 .. toctree::
     :hidden:
-    :caption: EEG caps
+    :caption: Status
 
     status/eeg-caps-status.rst
     Report an issue <https://github.com/fcbg-platforms/eeg-wiki/issues/46>
