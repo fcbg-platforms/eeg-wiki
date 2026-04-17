@@ -3,6 +3,8 @@
 EEG caps
 ==============
 
+To report new faulty/broken electrodes, please use the `eeg caps logbook`_
+
 Status
 -------------
 
@@ -13,5 +15,5 @@ Status
    :class: eeg-caps-status
 
 
-To report new faulty/broken electrodes, please use the `eeg caps logbook`_
+
    
