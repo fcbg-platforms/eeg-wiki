@@ -122,8 +122,11 @@ When implementing the task, the trigger must be sent at the same time as the com
 that delivers the stimulus. For visual stimulus, it is also recommanded to use frame count to time
 the stimulus onset.
 
-Here us an example using Psychopy:
-.. code-block:: python
+Here us an example using Psychopy. With this code, the buffer flip and the trigger command are synchronized, but a hardware delay may
+still occur between the buffer flip and the actual display of the stimulus on the monitor. This delay
+is usually very stable and must be estimated with a photodiode monitoring the screen luminance.
+
+.. code-block:: Python
     from psychopy import core, visual
     from byte_triggers import ParallelPortTrigger
 
@@ -170,9 +173,7 @@ Here us an example using Psychopy:
     core.wait(3)
     win.close()
         
-With this code, the buffer flip and the trigger command are synchronized, but a hardware delay may
-still occur between the buffer flip and the actual display of the stimulus on the monitor. This delay
-is usually very stable and must be estimated with a photodiode monitoring the screen luminance.
+
 
 
 
