@@ -114,3 +114,69 @@ address can be found in the device manager (Windows) or with ``ls -l /dev/parpor
             io64(ioObj, address, 101);  % set the parallel port to 101
             pause(0.01);  % wait for 10 ms
             io64(ioObj, address, 0);  % set the parallel port back to 0
+
+
+Delay between triggers and stimulus offset
+------------------------------------------
+When implementing the task, the trigger must be sent at the same time as the command
+that delivers the stimulus. For visual stimulus, it is also recommanded to use frame count to time
+the stimulus onset.
+
+Here us an example using Psychopy:
+.. code-block:: python
+    from psychopy import core, visual
+    from byte_triggers import ParallelPortTrigger
+
+    
+    # open the trigger port COM3 (assuming an Arduino is connected to the USB COM port 3)
+    trigger = ParallelPortTrigger("COM3")
+    
+    # init the experiment main window
+    win = visual.Window(size=(1920,1080), waitBlanking=True, screen=0)
+    textBox = visual.TextStim(win,'experiment is about to begin')
+    
+    # set stimuli
+    text = []
+    text.append('This is my first condition')
+    text.append('This is my second condition')
+
+    # number of trials
+    N_trials = 10
+    
+    # inter stimulus interval
+    ISI = .5
+
+    textBox.draw()
+    win.flip()
+    core.wait(3)
+
+    # experiment main loop
+    for n in range(N_trials):
+        textBox.text = text[n%2]
+        textBox.draw()
+        
+        # trigger.signal will be called when the buffer flip is done
+        win.callOnFlip(trigger.signal, n%2+1)
+        t_flip = win.flip()
+        
+        # call flip in a loop so that the real ISI is a multiple of the frame refresh period
+        while (core.monotonicClock.getTime() - t_flip) < ISI:
+            textBox.draw()
+            win.flip()
+            
+    textBox.text = 'experiment finished'
+    textBox.draw()
+    win.flip()
+    core.wait(3)
+    win.close()
+        
+With this code, the buffer flip and the trigger command are synchronized, but a hardware delay may
+still occur between the buffer flip and the actual display of the stimulus on the monitor. This delay
+is usually very stable and must be estimated with a photodiode monitoring the screen luminance.
+
+
+
+
+    
+    
+
