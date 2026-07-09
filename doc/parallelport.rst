@@ -78,7 +78,7 @@ address can be found in the device manager (Windows) or with ``ls -l /dev/parpor
 
                     from byte_triggers import ParallelPortTrigger
 
-                    trigger = ParallelPortTrigger("/dev/parport0)  # path address
+                    trigger = ParallelPortTrigger("/dev/parport0")  # path address
                     trigger.signal(101)
 
             .. tab-item:: Arduino
@@ -126,7 +126,8 @@ Here us an example using Psychopy. With this code, the buffer flip and the trigg
 still occur between the buffer flip and the actual display of the stimulus on the monitor. This delay
 is usually very stable and must be estimated with a photodiode monitoring the screen luminance.
 
-.. code-block:: Python
+.. code-block:: python
+
     from psychopy import core, visual
     from byte_triggers import ParallelPortTrigger
 
