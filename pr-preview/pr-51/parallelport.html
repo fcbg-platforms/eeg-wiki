@@ -350,7 +350,7 @@ file in <code class="docutils literal notranslate"><span class="pre">C:\Windows\
 Linux address</label><div class="sd-tab-content docutils">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">byte_triggers</span><span class="w"> </span><span class="kn">import</span> <span class="n">ParallelPortTrigger</span>
 
-<span class="n">trigger</span> <span class="o">=</span> <span class="n">ParallelPortTrigger</span><span class="p">(</span><span class="s2">&quot;/dev/parport0)  # path address</span>
+<span class="n">trigger</span> <span class="o">=</span> <span class="n">ParallelPortTrigger</span><span class="p">(</span><span class="s2">&quot;/dev/parport0&quot;</span><span class="p">)</span>  <span class="c1"># path address</span>
 <span class="n">trigger</span><span class="o">.</span><span class="n">signal</span><span class="p">(</span><span class="mi">101</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -399,11 +399,58 @@ in your MATLAB path</p></li>
 <section id="delay-between-triggers-and-stimulus-offset">
 <h2>Delay between triggers and stimulus offset<a class="headerlink" href="#delay-between-triggers-and-stimulus-offset" title="Link to this heading">🔗</a></h2>
 <p>When implementing the task, the trigger must be sent at the same time as the command
-that delivers the stimulus. For visual stimulus, it is also recommanded to use frame count to time
+that delivers the stimulus. For visual stimulus, it is also recommended to use frame count to time
 the stimulus onset.</p>
 <p>Here us an example using Psychopy. With this code, the buffer flip and the trigger command are synchronized, but a hardware delay may
 still occur between the buffer flip and the actual display of the stimulus on the monitor. This delay
 is usually very stable and must be estimated with a photodiode monitoring the screen luminance.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">psychopy</span><span class="w"> </span><span class="kn">import</span> <span class="n">core</span><span class="p">,</span> <span class="n">visual</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">byte_triggers</span><span class="w"> </span><span class="kn">import</span> <span class="n">ParallelPortTrigger</span>
+
+
+<span class="c1"># open the trigger port COM3 (assuming an Arduino is connected to the USB COM port 3)</span>
+<span class="n">trigger</span> <span class="o">=</span> <span class="n">ParallelPortTrigger</span><span class="p">(</span><span class="s2">&quot;COM3&quot;</span><span class="p">)</span>
+
+<span class="c1"># init the experiment main window</span>
+<span class="n">win</span> <span class="o">=</span> <span class="n">visual</span><span class="o">.</span><span class="n">Window</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="mi">1920</span><span class="p">,</span><span class="mi">1080</span><span class="p">),</span> <span class="n">waitBlanking</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">screen</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">textBox</span> <span class="o">=</span> <span class="n">visual</span><span class="o">.</span><span class="n">TextStim</span><span class="p">(</span><span class="n">win</span><span class="p">,</span><span class="s1">&#39;experiment is about to begin&#39;</span><span class="p">)</span>
+
+<span class="c1"># set stimuli</span>
+<span class="n">text</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">text</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;This is my first condition&#39;</span><span class="p">)</span>
+<span class="n">text</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;This is my second condition&#39;</span><span class="p">)</span>
+
+<span class="c1"># number of trials</span>
+<span class="n">N_trials</span> <span class="o">=</span> <span class="mi">10</span>
+
+<span class="c1"># inter stimulus interval</span>
+<span class="n">ISI</span> <span class="o">=</span> <span class="mf">.5</span>
+
+<span class="n">textBox</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span>
+<span class="n">win</span><span class="o">.</span><span class="n">flip</span><span class="p">()</span>
+<span class="n">core</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+
+<span class="c1"># experiment main loop</span>
+<span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N_trials</span><span class="p">):</span>
+    <span class="n">textBox</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="n">text</span><span class="p">[</span><span class="n">n</span><span class="o">%</span><span class="mi">2</span><span class="p">]</span>
+    <span class="n">textBox</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span>
+
+    <span class="c1"># trigger.signal will be called when the buffer flip is done</span>
+    <span class="n">win</span><span class="o">.</span><span class="n">callOnFlip</span><span class="p">(</span><span class="n">trigger</span><span class="o">.</span><span class="n">signal</span><span class="p">,</span> <span class="n">n</span><span class="o">%</span><span class="mi">2</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">t_flip</span> <span class="o">=</span> <span class="n">win</span><span class="o">.</span><span class="n">flip</span><span class="p">()</span>
+
+    <span class="c1"># call flip in a loop so that the real ISI is a multiple of the frame refresh period</span>
+    <span class="k">while</span> <span class="p">(</span><span class="n">core</span><span class="o">.</span><span class="n">monotonicClock</span><span class="o">.</span><span class="n">getTime</span><span class="p">()</span> <span class="o">-</span> <span class="n">t_flip</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">ISI</span><span class="p">:</span>
+        <span class="n">textBox</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span>
+        <span class="n">win</span><span class="o">.</span><span class="n">flip</span><span class="p">()</span>
+
+<span class="n">textBox</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="s1">&#39;experiment finished&#39;</span>
+<span class="n">textBox</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span>
+<span class="n">win</span><span class="o">.</span><span class="n">flip</span><span class="p">()</span>
+<span class="n">core</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">win</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
 </section>
 </section>
 
