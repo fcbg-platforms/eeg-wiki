@@ -126,7 +126,8 @@ Here us an example using Psychopy. With this code, the buffer flip and the trigg
 still occur between the buffer flip and the actual display of the stimulus on the monitor. This delay
 is usually very stable and must be estimated with a photodiode monitoring the screen luminance.
 
-.. code-block:: Python
+.. code-block:: python
+
     from psychopy import core, visual
     from byte_triggers import ParallelPortTrigger
 
