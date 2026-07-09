@@ -205,7 +205,7 @@ html_static_path = ["_static"]
 
 def setup(app):
     """Add custom CSS file."""
-    app.add_css_file('custom.css')
+    app.add_css_file("custom.css")
 
 
 def linkcode_resolve(domain: str, info: dict[str, str]) -> str | None:
