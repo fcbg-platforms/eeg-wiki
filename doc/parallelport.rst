@@ -78,7 +78,7 @@ address can be found in the device manager (Windows) or with ``ls -l /dev/parpor
 
                     from byte_triggers import ParallelPortTrigger
 
-                    trigger = ParallelPortTrigger("/dev/parport0)  # path address
+                    trigger = ParallelPortTrigger("/dev/parport0")  # path address
                     trigger.signal(101)
 
             .. tab-item:: Arduino
