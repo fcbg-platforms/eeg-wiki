@@ -19,7 +19,7 @@ import eeg_wiki
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = "eeg-wiki"
-author = "neuro@campusbiotech"
+author = "neuro @campusbiotech"
 copyright = f"{date.today().year}, {author}"  # noqa: A001
 release = eeg_wiki.__version__
 package = eeg_wiki.__name__
@@ -86,8 +86,8 @@ suppress_warnings = ["config.cache"]
 html_css_files = [
     "css/style.css",
 ]
-html_favicon = "_static/icons/FCBG.svg"
-html_logo = "_static/icons/FCBG.svg"
+html_favicon = "_static/icons/favicon_neuro.png"
+html_logo = "_static/icons/neuro@cb_v1.2.svg"
 html_permalinks_icon = "🔗"
 html_show_sphinx = False
 html_static_path = ["_static"]
@@ -200,7 +200,9 @@ bibtex_bibfiles = ["./references.bib"]
 # -- sphinx.ext.linkcode ---------------------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/extensions/linkcode.html
 
-html_static_path = ['_static']
+html_static_path = ["_static"]
+
+
 def setup(app):
     """Add custom CSS file."""
     app.add_css_file('custom.css')
