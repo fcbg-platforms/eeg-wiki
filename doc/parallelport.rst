@@ -119,7 +119,7 @@ address can be found in the device manager (Windows) or with ``ls -l /dev/parpor
 Delay between triggers and stimulus offset
 ------------------------------------------
 When implementing the task, the trigger must be sent at the same time as the command
-that delivers the stimulus. For visual stimulus, it is also recommanded to use frame count to time
+that delivers the stimulus. For visual stimulus, it is also recommended to use frame count to time
 the stimulus onset.
 
 Here us an example using Psychopy. With this code, the buffer flip and the trigger command are synchronized, but a hardware delay may
