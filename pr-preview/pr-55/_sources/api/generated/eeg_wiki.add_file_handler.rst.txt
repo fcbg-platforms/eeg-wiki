@@ -1,0 +1,9 @@
+﻿eeg\_wiki.add\_file\_handler
+============================
+
+.. currentmodule:: eeg_wiki
+
+.. autofunction:: add_file_handler
+
+.. minigallery:: eeg_wiki.add_file_handler
+    :add-heading:
