@@ -11,7 +11,7 @@ AQ1000709,waveguard original,64,small,ANT,,30.03.2026,operational,none,none
 AQ1000830,waveguard original,64,medium,ANT,,30.03.2026,operational,none,none
 AQ1000831,waveguard original,64,medium,ANT,,30.03.2026,reserve,none,none
 AQ1000790,waveguard original,64,medium,ANT,,30.03.2026,reserve,none,AF7
-AQ1001054,waveguard original,64,medium,ANT,,30.03.2026,operational,none,none
+AQ1001054,waveguard original,64,medium,ANT,,30.03.2026,operational,PO5,P5
 AQ1000122,waveguard net,128,large,ANT,01.12.2025,,operational,,
 AQ1000011,waveguard net,128,medium,ANT,01.07.2024,,operational,,
 S-005272,HydroCel GSN,128,44-47cm,EGI,01.08.2023,,operational,,
