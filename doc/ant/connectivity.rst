@@ -107,7 +107,7 @@ last one.
 .. warning::
 
     The platform amplifier number (e.g., ``ANT Neuro 1``, ``ANT Neuro 2``, etc.) are not sorted by serial number ! 
-    Thuse it is important to check the serial number of the amplifier and not the platform number.
+    Thuse it is important to check the **serial number** of the amplifier and not the platform number.
     The serial numbers are as follows:
 
     - ``ANT Neuro 1`` S/N 000325
