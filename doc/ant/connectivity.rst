@@ -104,18 +104,18 @@ It is **extremely important** to plug the right cable in the right amplifier. Th
 amplifier serial number should be increasing from the first amplifier connected to the
 last one.
 
-.. note::
+.. warning::
 
-    On the platform, we labeled our amplifiers ``ANT Neuro 1``, ``ANT Neuro 2``,
-    ``ANT Neuro 3``, and ``ANT Neuro 4``; with an increasing serial number.
+    The platform amplifier names (e.g., ``ANT Neuro 1``, ``ANT Neuro 2``, etc.) are not sorted by serial number ! 
+    Thuse it is important to check the **serial number** of the amplifier and not the platform name.
+    The serial numbers are as follows:
 
     - ``ANT Neuro 1`` S/N 000325
     - ``ANT Neuro 2`` S/N 000479
-    - ``ANT Neuro 3`` S/N 000650
+    - ``ANT Neuro 3`` S/N 300166
     - ``ANT Neuro 4`` S/N 000697
+    - ``ANT Neuro 5`` S/N 000650 (dev only)
 
-    Thus, you can plug the cap/trigger cable with the lower letter on the amplifier with
-    the lower number, and increase the number/letter for the next amplifier.
 
 .. tab-set::
 
